@@ -1,0 +1,16 @@
+- User: starts in main room
+- User: can push moveable objects
+- User: has a map covered in fog of war that is uncovered as rooms are discovered
+- User: can hold X number of objects (TODO)
+- User: can interact with interactive objects
+
+
+- Room: has X <= 4 doors
+- Room: can contain 0 <= X <= Y number of traps
+- Room: 
+ 
+
+- Objects: can be fixed or moveable, interactive or not interactive
+-- Key: can lock or unlock doors
+-- Door: can be locked, unlocked, blocked, opened, or closed
+-- Trap: can be triggered by the user
