@@ -1,16 +1,39 @@
-- User: starts in main room
-- User: can push moveable objects
-- User: has a map covered in fog of war that is uncovered as rooms are discovered
-- User: can hold X number of objects (TODO)
-- User: can interact with interactive objects
+- Character:
+-- User: starts in main room
+-- User: can push moveable objects
+-- User: has a map covered in fog of war that is uncovered as rooms are discovered
+-- User: can hold X number of objects (TODO: determine number of inventory slots user has)
+-- User: can interact with interactive objects
+-- Murderer: starts randomly within the house
+-- Murderer: continues to move throughout the house every time user changes rooms
+-- Murderer: kills user when adjacent causing game over
 
 
-- Room: has X <= 4 doors
-- Room: can contain 0 <= X <= Y number of traps
-- Room: 
+- House: location the game takes place, user is trapped in house, goal for user is to escape
+-- Room: has X <= 4 doors
+-- Room: can contain 0 <= X <= Y number of traps
+--- Constant Rooms:
+---- Hallway: connects 2 - 4 rooms, does not contain traps or any objects
+---- Main Atrium: room where user starts, contains 1 staircase and 2 doors, and the final door
+---- Passageway: secret passage that leads to another room or floor
+--- Extra Large Room:
+---- Greenhouse: can contain objects, can contain passageway
+--- Large Room:
+---- Master Bedroom: always connected to Master Bathroom, can contain objects, can contain passageway
+--- Medium Room:
+---- Master Bathroom: always connected to the master bedroom, can contain objects
+---- Bedroom: dead-end room, can contain objects
+--- Small Room:
+---- Bathroom: always connected to a hallway, can contain objects
+-- Floor: house contains X floors (TODO: determine number of floors)
+--- 2nd floor: 
+--- Main floor:
+--- Basement:
  
 
 - Objects: can be fixed or moveable, interactive or not interactive
 -- Key: can lock or unlock doors
 -- Door: can be locked, unlocked, blocked, opened, or closed
 -- Trap: can be triggered by the user
+-- Puzzle Object: object that helps complete part of the puzzle to beat the game
+-- Staircase: allows the user to ascend or descend a level in the house
