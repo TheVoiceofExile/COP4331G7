@@ -4,3 +4,6 @@ truly frightening 2D 8-bit game that requires serious thinking and resource mana
 Unlike other indie 2D horror games, our product will reimagine the genre with a 
 classic trope of escaping involving a decrepid house and a crazed murderer with a beautiful
 and nostalgic art design.
+
+This product is for the casual gamer looking for a good scare and a challenging puzzle. <Insert name of game here> is a atmospheric horror thriller puzzle game that looks to fill the void of a truly frightening 2D pixel art style game that requires serious thinking and resource management.
+Unlike other indie 2D horror games currently on the market, our product will reimagine the genre with a classic trope of escape horror involvinga decrepid house and a crazed murderer. All in a beautiful and nostalgic art design unlike any other.
