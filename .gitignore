@@ -4,7 +4,10 @@
 /[Bb]uild/
 /[Bb]uilds/
 /Assets/AssetStoreTools*
+
+# Theme plugin for linux
 /Assets/@Themes/
+@Themes.meta
 
 # Visual Studio 2015 cache directory
 /.vs/
