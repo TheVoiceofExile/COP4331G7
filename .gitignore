@@ -1,12 +1,12 @@
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/Assets/AssetStoreTools*
+COP4331G7_Unity_Source/[Ll]ibrary/
+COP4331G7_Unity_Source/[Tt]emp/
+COP4331G7_Unity_Source/[Oo]bj/
+COP4331G7_Unity_Source/[Bb]uild/
+COP4331G7_Unity_Source/[Bb]uilds/
+COP4331G7_Unity_Source/Assets/AssetStoreTools*
 
 # Theme plugin for linux
-/Assets/@Themes/
+COP4331G7_Unity_Source/Assets/@Themes/
 @Themes.meta
 
 # Visual Studio 2015 cache directory
