@@ -1,12 +1,12 @@
-COP4331G7_Unity_Source/[Ll]ibrary/
-COP4331G7_Unity_Source/[Tt]emp/
-COP4331G7_Unity_Source/[Oo]bj/
-COP4331G7_Unity_Source/[Bb]uild/
-COP4331G7_Unity_Source/[Bb]uilds/
-COP4331G7_Unity_Source/Assets/AssetStoreTools*
+MurderHouse/[Ll]ibrary/
+MurderHouse/[Tt]emp/
+MurderHouse/[Oo]bj/
+MurderHouse/[Bb]uild/
+MurderHouse/[Bb]uilds/
+MurderHouse/Assets/AssetStoreTools*
 
 # Theme plugin for linux
-COP4331G7_Unity_Source/Assets/@Themes/
+MurderHouse/Assets/@Themes/
 @Themes.meta
 
 # Visual Studio 2015 cache directory
