@@ -8,12 +8,14 @@ public class PlayerMovement : MonoBehaviour
 	public CameraMovement cameraMovement;
 
 	private Rigidbody2D myRigidbody;
+	private Animator myAnimator;
 
 	private static bool playerExists;
 
 	// Use this for initialization
 	void Start () 
 	{
+		myAnimator = GetComponent<Animator> ();
 		myRigidbody = GetComponent<Rigidbody2D> ();
 
 		if(!playerExists)
@@ -25,35 +27,43 @@ public class PlayerMovement : MonoBehaviour
 			Destroy (gameObject);
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
+		float horizontalMove = Input.GetAxisRaw("Horizontal");
+		float vericalMove = Input.GetAxisRaw("Vertical");
+
 		if(cameraMovement.moving)
 		{
 			myRigidbody.velocity = new Vector2 (0, 0);
+			myAnimator.SetFloat("Horizontal", 0);
+			myAnimator.SetFloat("Vertical", 0);
 		}
 		else
 		{
-			if(Mathf.Abs (Input.GetAxisRaw ("Horizontal")) > 0.5f)
+			if(Mathf.Abs (horizontalMove) > 0.5f)
 			{
-				myRigidbody.velocity = new Vector2 (Input.GetAxisRaw ("Horizontal") * moveSpeed, myRigidbody.velocity.y);
+				myRigidbody.velocity = new Vector2 (horizontalMove * moveSpeed, myRigidbody.velocity.y);
 			}	
 
-			if(Mathf.Abs (Input.GetAxisRaw ("Vertical")) > 0.5f)
+			if(Mathf.Abs (vericalMove) > 0.5f)
 			{
-				myRigidbody.velocity = new Vector2 (myRigidbody.velocity.x, Input.GetAxisRaw ("Vertical") * moveSpeed);
+				myRigidbody.velocity = new Vector2 (myRigidbody.velocity.x, vericalMove * moveSpeed);
 			}	
 
-			if(Mathf.Abs (Input.GetAxisRaw ("Horizontal")) < 0.5f)
+			if(Mathf.Abs (horizontalMove) < 0.5f)
 			{
 				myRigidbody.velocity = new Vector2 (0f, myRigidbody.velocity.y);
 			}
 
-			if(Mathf.Abs (Input.GetAxisRaw ("Vertical")) < 0.5f)
+			if(Mathf.Abs (vericalMove) < 0.5f)
 			{
 				myRigidbody.velocity = new Vector2 (myRigidbody.velocity.x, 0f);
 			}
+
+			myAnimator.SetFloat("Horizontal", horizontalMove);
+			myAnimator.SetFloat("Vertical", vericalMove);
 		}
 	}
 }
