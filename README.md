@@ -1,9 +1,9 @@
 # COP4331G7
 Table of contents:
 
--Vision Statement: "vision_statement.txt"
+-Vision Statement: https://github.com/TheVoiceofExile/COP4331G7/blob/Sprint-2/vision_statement.txt
 
--User Stories: Google docs link in "user_stories.txt"
+-User Stories: https://docs.google.com/document/d/1GOhLnM7Xn_yMtTn4Bzej9IWV_SgqwZfB-Y8I4TUx0N4/edit?usp=sharing
 
 -Product Backlog: https://trello.com/b/frj3JTZl/project
 
@@ -11,7 +11,7 @@ Table of contents:
 
 -Burndown Chart: https://docs.google.com/spreadsheets/d/1V42vrZ2qeucbeeeNsc_G3mhc0rVVBTxyHbqLSrAwyEI/edit#gid=0
 
--Design Documents: "UML_Diagram.png" Image of the UML source class diagram
+-Design Documents: https://github.com/TheVoiceofExile/COP4331G7/blob/Sprint-2/UML_Diagram.png
 
 -Camera Movemnet Demonstration: https://youtu.be/bFb8s9haxLE
 
