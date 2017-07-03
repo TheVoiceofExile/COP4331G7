@@ -13,6 +13,10 @@ Table of contents:
 
 -Design Documents: "UML_Diagram.png" Image of the UML source class diagram
 
+-Camera Movemnet Demonstration: https://youtu.be/bFb8s9haxLE
+
+-Player Animation Demonstration: https://youtu.be/ArqU-2ZTnK4
+
 -Code: COP4331G7/COP4331G7_Unity_Source/Assets/Scripts/*.cs
 
 -Tests: None yet
