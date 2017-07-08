@@ -13,6 +13,7 @@ public class RoomTransition : MonoBehaviour {
 		if(other.gameObject.name == "Player")
 		{
 			cameraMovement.Move (other.transform, cameraPosition, startPoint);
+			other.gameObject.GetComponent<OilLevelManager> ().UseOil ();
 		}
 	}
 }
