@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OilRefill : MonoBehaviour 
+public class KeyPickUp : MonoBehaviour 
 {
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		if(other.gameObject.name == "Player")
 		{
-			other.gameObject.GetComponent<OilLevelManager> ().SetMaxOil ();
+			other.gameObject.GetComponent<KeyManager> ().PickupKey ();
 			gameObject.SetActive (false);
 		}
 	}

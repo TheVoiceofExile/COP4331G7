@@ -22,9 +22,7 @@ public class OilLevelManager : MonoBehaviour
 		{
 			
 		}
-
 	}
-
 
 	// Decrease amount of oil
 	public void UseOil ()
@@ -40,6 +38,5 @@ public class OilLevelManager : MonoBehaviour
 	{
 		playerCurrentOil = playerMaxOil;
 	}
-
-
+		
 }

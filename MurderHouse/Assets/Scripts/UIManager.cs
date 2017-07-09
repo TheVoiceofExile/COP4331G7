@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
 
 	public Slider oilBar;
+	public Text keyText;
 	public OilLevelManager oilLevel;
+	public KeyManager keyCount;
 
 	// Use this for initialization
 	void Start () {
@@ -18,5 +20,6 @@ public class UIManager : MonoBehaviour {
 	{
 		oilBar.maxValue = oilLevel.playerMaxOil;
 		oilBar.value = oilLevel.playerCurrentOil;
+		keyText.text = "Keys: " + keyCount.keysInHand;
 	}
 }
