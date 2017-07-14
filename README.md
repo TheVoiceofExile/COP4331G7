@@ -18,5 +18,3 @@ Table of contents:
 -Player Animation Demonstration: https://youtu.be/ArqU-2ZTnK4
 
 -Code: COP4331G7/COP4331G7_Unity_Source/Assets/Scripts/*.cs
-
--Tests: None yet
