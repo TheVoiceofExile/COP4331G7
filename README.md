@@ -16,6 +16,9 @@ Unlike other indie 2D horror games currently on the market, our product will rei
 ## Design Documents
 # HEY WE NEED TO UPDATE THIS
 
+## Test Cases
+ [Test Cases](https://docs.google.com/document/d/1chTuzi6hxP2Fo4yO8IciW_CnbA_yWR3MFyS3CCYF95g/edit)
+
 ## Product Demostrations
  [Camera movement](https://youtu.be/bFb8s9haxLE)
  
