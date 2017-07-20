@@ -252,7 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 567150977}
   startPoint: {fileID: 165083357}
-  cameraMovement: {fileID: 1879139399}
+  cameraMovement: {fileID: 0}
 --- !u!61 &90306058
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1293,7 +1293,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 1879139399}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3649a7b1f6b984cd6991e251e32dfa92, type: 2}
   m_IsPrefabParent: 0
@@ -1610,10 +1610,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1151234472}
   - component: {fileID: 1151234471}
+  - component: {fileID: 1151234470}
   - component: {fileID: 1151234469}
   - component: {fileID: 1151234468}
-  - component: {fileID: 1151234470}
-  - component: {fileID: 1151234467}
+  - component: {fileID: 1151234475}
   - component: {fileID: 1151234473}
   - component: {fileID: 1151234474}
   m_Layer: 0
@@ -1623,20 +1623,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1151234467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114373355645119484, guid: 01b4f34cfae3f47db850cb1139ab7a1e,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151234466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b671addb0e084f1899d21e0d22e308f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 50
-  cameraMovement: {fileID: 1879139399}
 --- !u!61 &1151234468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1694,7 +1680,7 @@ Animator:
   m_GameObject: {fileID: 1151234466}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3eeb8f92b06494e90921f9cf099ff713, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0aa0dd192a2ec354a9901a389549fc74, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1784,6 +1770,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keysInHand: 0
+--- !u!114 &1151234475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151234466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c68d92150403d4da9892aef77e774f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  cameraMovement: {fileID: 1879139399}
 --- !u!4 &1183603256 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4252358150290980, guid: 858da1ae2071449f58d7400817fbc85d,
@@ -1992,7 +1991,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 1879139399}
+      objectReference: {fileID: 0}
     - target: {fileID: 4460833085655830, guid: a61987ad6f7314008ad1bfd55cc47386, type: 2}
       propertyPath: m_LocalPosition.y
       value: -3.3
@@ -2120,7 +2119,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1534867439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.69977, y: -8.958609, z: 0}
+  m_LocalPosition: {x: 67.69977, y: -8.958609, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2502,7 +2501,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 1879139399}
+      objectReference: {fileID: 0}
     - target: {fileID: 212476287970441066, guid: bb4cc0279b4c4470db882c2a344ce79c,
         type: 2}
       propertyPath: m_SortingLayerID
@@ -2619,7 +2618,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1879139393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ebc72fba929347fe8ddb1db6bc35c9f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed346dc8cbc594248b78f98f272186f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moving: 0
