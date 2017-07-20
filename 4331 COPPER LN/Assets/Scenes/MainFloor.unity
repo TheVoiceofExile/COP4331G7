@@ -821,6 +821,12 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212420751141405822, guid: 858da1ae2071449f58d7400817fbc85d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e79144549ec2a4d30a42a5b356aab2ea,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 858da1ae2071449f58d7400817fbc85d, type: 2}
   m_IsPrefabParent: 0
@@ -1237,6 +1243,12 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212420751141405822, guid: 858da1ae2071449f58d7400817fbc85d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e79144549ec2a4d30a42a5b356aab2ea,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 858da1ae2071449f58d7400817fbc85d, type: 2}
   m_IsPrefabParent: 0
@@ -1406,6 +1418,12 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212420751141405822, guid: 858da1ae2071449f58d7400817fbc85d,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e79144549ec2a4d30a42a5b356aab2ea,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 858da1ae2071449f58d7400817fbc85d, type: 2}
   m_IsPrefabParent: 0
@@ -1635,8 +1653,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b671addb0e084f1899d21e0d22e308f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 50
-  cameraMovement: {fileID: 1879139399}
 --- !u!61 &1151234468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2066,6 +2082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1534867441}
   - component: {fileID: 1534867440}
+  - component: {fileID: 1534867442}
   m_Layer: 0
   m_Name: Murderer
   m_TagString: Untagged
@@ -2102,8 +2119,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -788434333
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7cd81c33dc53ff94f9fe3ca171a147c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2126,6 +2143,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1534867442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1534867439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078332641be8b454b9d74ad16fee652c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+  player: {fileID: 1151234466}
 --- !u!4 &1586181024 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4719300090957790, guid: 70cbca206a88c40318803fa7e4dd569f,
@@ -2622,9 +2652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebc72fba929347fe8ddb1db6bc35c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moving: 0
-  follow: 0
-  player: {fileID: 1151234472}
 --- !u!4 &1880714512
 Transform:
   m_ObjectHideFlags: 0
