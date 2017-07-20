@@ -42,15 +42,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Room
-    uniqueID: 714905845
-    locked: 0
-  - name: Door
-    uniqueID: 3873131873
-    locked: 0
-  - name: Item
-    uniqueID: 56949669
-    locked: 0
-  - name: Player
-    uniqueID: 3506532963
-    locked: 0
