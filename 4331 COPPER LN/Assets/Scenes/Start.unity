@@ -2026,13 +2026,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1302029131}
   - component: {fileID: 1302029130}
-  - component: {fileID: 1302029132}
   - component: {fileID: 1302029133}
-  - component: {fileID: 1302029134}
   - component: {fileID: 1302029135}
   - component: {fileID: 1302029136}
+  - component: {fileID: 1302029132}
   m_Layer: 0
-  m_Name: Character_0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2103,6 +2102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
+  cameraMovement: {fileID: 581620500}
 --- !u!95 &1302029133
 Animator:
   serializedVersion: 3
@@ -2120,19 +2120,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1302029134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1302029129}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e7f852122a71640bf4855cb0641dfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 50
-  cameraMovement: {fileID: 581620500}
 --- !u!50 &1302029135
 Rigidbody2D:
   serializedVersion: 4
