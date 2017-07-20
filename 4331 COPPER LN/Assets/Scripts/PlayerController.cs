@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+<<<<<<< HEAD
         playerMoving = false;
 
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
@@ -63,12 +63,12 @@ public class PlayerController : MonoBehaviour
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0f);
         }
 
-        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
-        anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
-        anim.SetBool("PlayerMoving", playerMoving);
-        anim.SetFloat("LastMoveX", lastMove.x);
-        anim.SetFloat("LastMoveY", lastMove.y);
-
+//        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+//        anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+//        anim.SetBool("PlayerMoving", playerMoving);
+//        anim.SetFloat("LastMoveX", lastMove.x);
+//        //anim.SetFloat("LastMoveY", lastMove.y);
+=======
 		float horizontalMove = Input.GetAxisRaw("Horizontal");
 		float vericalMove = Input.GetAxisRaw("Vertical");
 		playerMoving = false;
@@ -111,6 +111,6 @@ public class PlayerController : MonoBehaviour
 	        anim.SetFloat("LastMoveX", lastMove.x);
 	        anim.SetFloat("LastMoveY", lastMove.y);
 		}
-
+>>>>>>> origin/Sprint-3
     }
 }
