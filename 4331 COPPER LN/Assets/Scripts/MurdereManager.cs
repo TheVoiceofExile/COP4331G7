@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chase : MonoBehaviour
+public class MurdereManager : MonoBehaviour
 {
 	public int speed;
 	public GameObject player;
-	private Rigidbody2D myRigidbody;
+	private Rigidbody2D playerRigidbody;
 
 	void Update () 
 	{
-		myRigidbody = player.GetComponent<Rigidbody2D>();
+		playerRigidbody = player.GetComponent<Rigidbody2D>();
 
-		if (myRigidbody.velocity.magnitude > 0) {
+		if (playerRigidbody.velocity.magnitude > 0) {
 			Vector3 localPosition = player.transform.position - transform.position;
 			localPosition = localPosition.normalized; // The normalized direction in LOCAL space
 			transform.Translate (localPosition.x * Time.deltaTime * speed, localPosition.y * Time.deltaTime * speed, localPosition.z * Time.deltaTime * speed);
