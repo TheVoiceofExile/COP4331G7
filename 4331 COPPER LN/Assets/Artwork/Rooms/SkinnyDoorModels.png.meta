@@ -1,7 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 40c85c957d59d4d9488533784eefca32
-timeCreated: 1500564925
+timeCreated: 1500566246
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,13 +8,6 @@ TextureImporter:
     21300002: SkinnyDoorModels_1
     21300004: SkinnyDoorModels_2
     21300006: SkinnyDoorModels_3
-=======
-guid: 1ba4b13101bf449549be4c87ed0bd8aa
-timeCreated: 1500564536
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
->>>>>>> origin/Sprint-3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -39,32 +31,20 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-<<<<<<< HEAD
     filterMode: 0
-=======
-    filterMode: -1
->>>>>>> origin/Sprint-3
     aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< HEAD
   spriteMode: 2
-=======
-  spriteMode: 1
->>>>>>> origin/Sprint-3
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< HEAD
   spritePixelsToUnits: 1
-=======
-  spritePixelsToUnits: 100
->>>>>>> origin/Sprint-3
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -82,7 +62,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-<<<<<<< HEAD
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
@@ -146,11 +125,6 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
-=======
-  spriteSheet:
-    serializedVersion: 2
-    sprites: []
->>>>>>> origin/Sprint-3
     outline: []
   spritePackingTag: 
   userData: 
