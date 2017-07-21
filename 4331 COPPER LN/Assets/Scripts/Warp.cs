@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Warp : MonoBehaviour {
 
-	public Transform warpTarget;
+	public Transform warpTargetPlayer;
+	public Transform warpTargetCamera;
 
 	IEnumerator OnTriggerEnter2D(Collider2D other)
 	{
@@ -14,8 +15,9 @@ public class Warp : MonoBehaviour {
 
 		yield return StartCoroutine(sf.FadeToBlack());
 
-		other.gameObject.transform.position = new Vector3(warpTarget.position.x, warpTarget.position.y, 0);
-		Camera.main.transform.position = warpTarget.position;
+		// Camera to Startpoint, player to StartPoint and Z = 0
+		other.gameObject.transform.position = warpTargetPlayer.position;
+		Camera.main.transform.position = warpTargetCamera.position;
 
 		yield return StartCoroutine(sf.FadeToClear());
 

@@ -9,17 +9,19 @@ public class UIManager : MonoBehaviour {
 	public Text keyText;
 	public OilLevelManager oilLevel;
 	public KeyManager keyCount;
+	public GameObject canvasObject;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start () 
+	{
+		canvasObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-        //oilBar.maxValue = oilLevel.playerMaxOil;
-        //oilBar.value = oilLevel.playerCurrentOil;
-		//keyText.text = "Keys: " + keyCount.keysInHand;
+        oilBar.maxValue = oilLevel.playerMaxOil;
+        oilBar.value = oilLevel.playerCurrentOil;
+		keyText.text = "Keys: " + keyCount.keysInHand;
 	}
 }
