@@ -40,10 +40,10 @@ public class PlayerController : MonoBehaviour
 
 		  if (cameraMovement.moving)
         {
-            myRigidbody.velocity = new Vector2(0, 0);
-            myAnimator.SetFloat("Horizontal", 0);
-            myAnimator.SetFloat("Vertical", 0);
-        }
+            myRigidBody.velocity = new Vector2(0, 0);
+				anim.SetFloat("MoveX", 0);
+				anim.SetFloat("MoveY", 0);
+		}
         else
         {
 			  if (Mathf.Abs(horizontalMove) > 0.5f)
