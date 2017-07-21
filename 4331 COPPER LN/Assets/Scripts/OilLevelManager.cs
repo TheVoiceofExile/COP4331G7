@@ -5,22 +5,43 @@ using UnityEngine;
 public class OilLevelManager : MonoBehaviour 
 {
 
-	public int playerMaxOil = 10;
+	public int playerMaxOil = 20;
 	public int playerCurrentOil;
+	public LightManager lighting;
 
 	// Use this for initialization
 	void Start () 
 	{
-		playerCurrentOil = playerMaxOil;
+		playerCurrentOil = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
 		// Make scene go dark when empty oil
+		if(playerCurrentOil == 20)
+		{
+			lighting.SetToFull ();
+		}
+
+		if(playerCurrentOil == 15)
+		{
+			lighting.SetToThreeQtr ();
+		}
+
+		if(playerCurrentOil == 10)
+		{
+			lighting.SetToHalf ();
+		}
+
+		if(playerCurrentOil == 5)
+		{
+			lighting.SetToOneQtr ();
+		}
+
 		if(playerCurrentOil == 0)
 		{
-			
+			lighting.SetToEmpty ();
 		}
 	}
 
