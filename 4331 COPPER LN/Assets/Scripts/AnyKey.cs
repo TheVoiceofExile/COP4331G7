@@ -14,8 +14,6 @@ public class AnyKey : MonoBehaviour {
 
 		if(Input.anyKey && start)
 		{
-			Debug.Log("A key or mouse click has been detected.");
-
 			Camera.main.transform.position = warpTarget.position;
 
 			start = false;
