@@ -23,7 +23,8 @@ public class CameraMovement : MonoBehaviour
     {
         if (moving)
         {
-            transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
+            //transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
+            Camera.main.transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
         }
         if (moving && transform.position == cameraTarget.position)
         {
