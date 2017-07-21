@@ -21,15 +21,15 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moving)
-        {
-            //transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
-            Camera.main.transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
-        }
-        if (moving && transform.position == cameraTarget.position)
-        {
-            moving = false;
-        }
+//        if (moving)
+//        {
+//            //transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
+//           // Camera.main.transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
+//        }
+//        if (moving && transform.position == cameraTarget.position)
+//        {
+//            moving = false;
+//        }
     }
 
     void LateUpdate()
