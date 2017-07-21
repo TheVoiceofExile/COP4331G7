@@ -1,15 +1,12 @@
-4331 COPPER LN/[Ll]ibrary/
-4331 COPPER LN/[Tt]emp/
-4331 COPPER LN/[Oo]bj/
-4331 COPPER LN/[Bb]uild/
-4331 COPPER LN/[Bb]uilds/
-4331 COPPER LN/Assets/AssetStoreTools*
-
-MurderHouse
-COP4331G7_Unity_Source/Library
+MurderHouse/[Ll]ibrary/
+MurderHouse/[Tt]emp/
+MurderHouse/[Oo]bj/
+MurderHouse/[Bb]uild/
+MurderHouse/[Bb]uilds/
+MurderHouse/Assets/AssetStoreTools*
 
 # Theme plugin for linux
-4331 COPPER LN/Assets/@Themes/
+MurderHouse/Assets/@Themes/
 @Themes.meta
 
 # Visual Studio 2015 cache directory
@@ -32,7 +29,6 @@ ExportedObj/
 
 # Unity3D generated meta files
 *.pidb.meta
-*.meta
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
