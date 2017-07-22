@@ -23,6 +23,19 @@ Unlike other indie 2D horror games currently on the market, our product will rei
  [Camera movement](https://youtu.be/bFb8s9haxLE)
  
  [Player Animations](https://youtu.be/ArqU-2ZTnK4)
+ 
+ [New Sprint 3 Demo](https://youtu.be/dSt8PDynHqg)
+ New items in demo:
+ * Lighting
+ * Camera follow
+ * Room transitions
+ * Lamp item (With decreasing fuel amount)
+ * Lamp oil item
+ * Locked doors with keys
+ * 2nd Floor and Basement
+ * Main menu
+ * Title Screen
+ * Intro area
 
 ## Source Code
 [Assets](https://github.com/TheVoiceofExile/COP4331G7/tree/Sprint-3/4331%20COPPER%20LN/Assets)
