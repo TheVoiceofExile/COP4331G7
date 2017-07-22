@@ -9,6 +9,7 @@ public class CameraMovement : MonoBehaviour
     public bool follow = false;
     public Transform player;
 
+    private Transform cameraTarget;
     private Vector3 offset;
 
     // Use this for initialization
@@ -20,6 +21,15 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+//        if (moving)
+//        {
+//            //transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
+//           // Camera.main.transform.position = Vector3.MoveTowards(transform.position, cameraTarget.position, 300 * Time.deltaTime);
+//        }
+//        if (moving && transform.position == cameraTarget.position)
+//        {
+//            moving = false;
+//        }
     }
 
     void LateUpdate()
@@ -32,6 +42,7 @@ public class CameraMovement : MonoBehaviour
 
     public void Move(Transform player, Transform cameraTarget, Transform playerTarget)
     {
+        this.cameraTarget = cameraTarget;
         player.position = playerTarget.position;
         moving = true;
         follow = playerTarget.name == "HallwayPoint" ? true : false;
