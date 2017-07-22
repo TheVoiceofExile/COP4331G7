@@ -5152,12 +5152,12 @@ Prefab:
     - target: {fileID: 224258139617325880, guid: 98f591f53015440f5a35af202e4aebc0,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -80
+      value: 311
       objectReference: {fileID: 0}
     - target: {fileID: 224258139617325880, guid: 98f591f53015440f5a35af202e4aebc0,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -234
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 224258139617325880, guid: 98f591f53015440f5a35af202e4aebc0,
         type: 2}

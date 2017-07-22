@@ -51,11 +51,13 @@
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Chase.cs" />
      <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\Graph.cs" />
      <Compile Include="Assets\Scripts\KeyManager.cs" />
      <Compile Include="Assets\Scripts\KeyPickUp.cs" />
      <Compile Include="Assets\Scripts\LightManager.cs" />
      <Compile Include="Assets\Scripts\LockedDoorManager.cs" />
      <Compile Include="Assets\Scripts\MurdereManager.cs" />
+     <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\OilLevelManager.cs" />
      <Compile Include="Assets\Scripts\OilRefill.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
@@ -63,6 +65,7 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\RoomTransition.cs" />
      <Compile Include="Assets\Scripts\ScreenFader.cs" />
+     <Compile Include="Assets\Scripts\Search.cs" />
      <Compile Include="Assets\Scripts\TextBoxManager.cs" />
      <Compile Include="Assets\Scripts\TextImporter.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
