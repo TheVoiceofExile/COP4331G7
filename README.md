@@ -14,7 +14,7 @@ Unlike other indie 2D horror games currently on the market, our product will rei
  [All sprints](https://docs.google.com/spreadsheets/d/1V42vrZ2qeucbeeeNsc_G3mhc0rVVBTxyHbqLSrAwyEI/edit#gid=0), each sprint on a separate sheet
 
 ## Design Documents
-# HEY WE NEED TO UPDATE THIS
+ [UML Diagram](https://github.com/TheVoiceofExile/COP4331G7/blob/Sprint-3/UML_Diagram.png)
 
 ## Test Cases
  [Test Cases](https://docs.google.com/document/d/1chTuzi6hxP2Fo4yO8IciW_CnbA_yWR3MFyS3CCYF95g/edit)
