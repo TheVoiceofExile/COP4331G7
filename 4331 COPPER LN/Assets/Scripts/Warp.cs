@@ -11,6 +11,8 @@ public class Warp : MonoBehaviour {
 	{
 		ScreenFader sf = GameObject.FindGameObjectWithTag("Fader").GetComponent<ScreenFader>();
 
+		Debug.Log("An object has collided.");
+
 		yield return StartCoroutine(sf.FadeToBlack());
 
 		// Camera to Startpoint, player to StartPoint and Z = 0
