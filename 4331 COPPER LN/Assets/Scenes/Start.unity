@@ -906,7 +906,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb4cc0279b4c4470db882c2a344ce79c, type: 2}
   m_IsPrefabParent: 0
@@ -1237,7 +1237,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114210394360192612, guid: 3649a7b1f6b984cd6991e251e32dfa92,
         type: 2}
       propertyPath: startPoint
@@ -2867,7 +2867,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114561168643704590, guid: 5124050b92a874a508ce1b54d163b254,
         type: 2}
       propertyPath: cameraPosition
@@ -3267,7 +3267,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a61987ad6f7314008ad1bfd55cc47386, type: 2}
   m_IsPrefabParent: 0
@@ -3384,7 +3384,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114561168643704590, guid: 5124050b92a874a508ce1b54d163b254,
         type: 2}
       propertyPath: startPoint
@@ -3758,7 +3758,6 @@ GameObject:
   - component: {fileID: 581620497}
   - component: {fileID: 581620496}
   - component: {fileID: 581620495}
-  - component: {fileID: 581620500}
   - component: {fileID: 581620501}
   m_Layer: 0
   m_Name: Main Camera
@@ -3837,20 +3836,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &581620500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 581620494}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed346dc8cbc594248b78f98f272186f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moving: 0
-  follow: 0
-  player: {fileID: 0}
 --- !u!114 &581620501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3937,7 +3922,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114561168643704590, guid: 5124050b92a874a508ce1b54d163b254,
         type: 2}
       propertyPath: cameraPosition
@@ -4175,7 +4160,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5124050b92a874a508ce1b54d163b254, type: 2}
   m_IsPrefabParent: 0
@@ -4232,7 +4217,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114960107072816036, guid: bb4cc0279b4c4470db882c2a344ce79c,
         type: 2}
       propertyPath: startPoint
@@ -4939,7 +4924,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114561168643704590, guid: 5124050b92a874a508ce1b54d163b254,
         type: 2}
       propertyPath: startPoint
@@ -5408,7 +5393,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5124050b92a874a508ce1b54d163b254, type: 2}
   m_IsPrefabParent: 0
@@ -6772,7 +6757,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114408574561449888, guid: a61987ad6f7314008ad1bfd55cc47386,
         type: 2}
       propertyPath: cameraPosition
@@ -6865,7 +6850,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3649a7b1f6b984cd6991e251e32dfa92, type: 2}
   m_IsPrefabParent: 0
@@ -6989,7 +6974,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114960107072816036, guid: bb4cc0279b4c4470db882c2a344ce79c,
         type: 2}
       propertyPath: cameraPosition
@@ -7689,7 +7674,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114210394360192612, guid: 3649a7b1f6b984cd6991e251e32dfa92,
         type: 2}
       propertyPath: cameraPosition
@@ -7783,7 +7768,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114408574561449888, guid: a61987ad6f7314008ad1bfd55cc47386,
         type: 2}
       propertyPath: cameraPosition
@@ -7871,7 +7856,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a61987ad6f7314008ad1bfd55cc47386, type: 2}
   m_IsPrefabParent: 0
@@ -9294,7 +9279,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 4485968223838474, guid: 5124050b92a874a508ce1b54d163b254, type: 2}
       propertyPath: m_LocalPosition.x
       value: -15
@@ -9547,7 +9532,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114408574561449888, guid: a61987ad6f7314008ad1bfd55cc47386,
         type: 2}
       propertyPath: cameraPosition
@@ -9987,7 +9972,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a61987ad6f7314008ad1bfd55cc47386, type: 2}
   m_IsPrefabParent: 0
@@ -10205,7 +10190,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a61987ad6f7314008ad1bfd55cc47386, type: 2}
   m_IsPrefabParent: 0
@@ -10608,7 +10593,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114561168643704590, guid: 5124050b92a874a508ce1b54d163b254,
         type: 2}
       propertyPath: cameraPosition
@@ -10901,7 +10886,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114561168643704590, guid: 5124050b92a874a508ce1b54d163b254,
         type: 2}
       propertyPath: startPoint
@@ -11932,7 +11917,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c78703f533ea4d2c8c797db72c9e8ae, type: 2}
   m_IsPrefabParent: 0
@@ -11993,7 +11978,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3649a7b1f6b984cd6991e251e32dfa92, type: 2}
   m_IsPrefabParent: 0
@@ -12280,7 +12265,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a61987ad6f7314008ad1bfd55cc47386, type: 2}
   m_IsPrefabParent: 0
@@ -12977,7 +12962,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb4cc0279b4c4470db882c2a344ce79c, type: 2}
   m_IsPrefabParent: 0
@@ -13122,7 +13107,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb4cc0279b4c4470db882c2a344ce79c, type: 2}
   m_IsPrefabParent: 0
@@ -13337,7 +13322,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     - target: {fileID: 114960107072816036, guid: bb4cc0279b4c4470db882c2a344ce79c,
         type: 2}
       propertyPath: cameraPosition
@@ -13687,7 +13672,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3649a7b1f6b984cd6991e251e32dfa92, type: 2}
   m_IsPrefabParent: 0
@@ -14013,7 +13998,7 @@ Prefab:
         type: 2}
       propertyPath: cameraMovement
       value: 
-      objectReference: {fileID: 581620500}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a61987ad6f7314008ad1bfd55cc47386, type: 2}
   m_IsPrefabParent: 0

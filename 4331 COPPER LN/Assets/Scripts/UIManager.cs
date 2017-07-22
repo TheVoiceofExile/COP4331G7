@@ -20,8 +20,8 @@ public class UIManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-        oilBar.maxValue = oilLevel.playerMaxOil;
-        oilBar.value = oilLevel.playerCurrentOil;
+      oilBar.maxValue = oilLevel.playerMaxOil;
+      oilBar.value = oilLevel.playerCurrentOil;
 		keyText.text = "Keys: " + keyCount.keysInHand;
 	}
 }

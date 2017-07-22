@@ -14,6 +14,4 @@ public class UItrigger : MonoBehaviour
 			canvasObject.SetActive (true);
 		}
 	}
-
-
 }

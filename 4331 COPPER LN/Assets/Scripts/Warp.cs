@@ -18,7 +18,5 @@ public class Warp : MonoBehaviour {
 		Camera.main.transform.position = warpTargetCamera.position;
 
 		yield return StartCoroutine(sf.FadeToClear());
-
-
 	}
 }

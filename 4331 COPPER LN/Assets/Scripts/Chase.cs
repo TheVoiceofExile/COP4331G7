@@ -7,11 +7,14 @@ public class Chase : MonoBehaviour
 	public int speed;
 	public GameObject player;
 	private Rigidbody2D myRigidbody;
+	
+	void Start ()
+	{
+		myRigidbody = player.GetComponent<Rigidbody2D>();
+	}
 
 	void Update () 
 	{
-		myRigidbody = player.GetComponent<Rigidbody2D>();
-
 		if (myRigidbody.velocity.magnitude > 0) {
 			Vector3 localPosition = player.transform.position - transform.position;
 			localPosition = localPosition.normalized; // The normalized direction in LOCAL space

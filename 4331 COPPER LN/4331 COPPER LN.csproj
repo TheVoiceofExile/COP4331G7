@@ -91,7 +91,6 @@
     <Compile Include="Assets\Scripts\OilRefill.cs" />
     <Compile Include="Assets\Scripts\OpenDoor.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\RoomTransition.cs" />
     <Compile Include="Assets\Scripts\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
