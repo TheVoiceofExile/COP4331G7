@@ -25,5 +25,4 @@ Unlike other indie 2D horror games currently on the market, our product will rei
  [Player Animations](https://youtu.be/ArqU-2ZTnK4)
 
 ## Source Code
-Location is relative to the code page on this github repo
-COP4331G7/COP4331G7_Unity_Source/Assets/Scripts/*.cs
+[Assets](https://github.com/TheVoiceofExile/COP4331G7/tree/Sprint-3/4331%20COPPER%20LN/Assets)
