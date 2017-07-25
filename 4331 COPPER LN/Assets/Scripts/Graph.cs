@@ -8,7 +8,7 @@ public class Graph {
 	public int cols = 0;
 	public Node[] nodes;
 
-
+	/*
 	public Graph(int[,] grid)
 	{
 		rows = grid.GetLength (0);
@@ -52,5 +52,5 @@ public class Graph {
 
 			}
 		}
-	}
+	}*/
 }
