@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Node {
+public class Nodes {
 
-	public List<Node> adjacent = new List<Node>();
-	public Node previous = null;
+	public List<Nodes> adjacent = new List<Nodes>();
+	public Nodes previous = null;
 	public string label = "";
 
 	public void Clear()
