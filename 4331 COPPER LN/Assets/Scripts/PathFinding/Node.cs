@@ -22,7 +22,7 @@ public class Node {
 	public NodeConnection BottomLeft;
 	public NodeConnection BottomRight;
 	
-	GameObject Bug;
+	GameObject Debugger;
 	
 	public Node(float x, float y, Vector2 position, Grid grid)
 	{
@@ -52,15 +52,15 @@ public class Node {
 		}	
 
 		//Draw Node on screen for debugging purposes
-		Bug = GameObject.Instantiate (Resources.Load ("Node")) as GameObject; 
-		Bug.transform.position = Position;
-		Bug.GetComponent<Debugger> ().X = X;
-		Bug.GetComponent<Debugger> ().Y = Y;
+		Debugger = GameObject.Instantiate (Resources.Load ("Node")) as GameObject; 
+		Debugger.transform.position = Position;
+		Debugger.GetComponent<Debugger> ().X = X;
+		Debugger.GetComponent<Debugger> ().Y = Y;
 	}
 
 	public void SetColor(Color color)
 	{
-		Bug.transform.GetComponent<SpriteRenderer> ().color = color;
+		Debugger.transform.GetComponent<SpriteRenderer> ().color = color;
 	}
 
 	//Cull nodes if they don't have enough valid connection points (3)

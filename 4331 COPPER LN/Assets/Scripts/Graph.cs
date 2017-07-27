@@ -6,7 +6,7 @@ public class Graph {
 
 	public int rows = 0;
 	public int cols = 0;
-	public Node[] nodes;
+	//public Node[] nodes;
 
 	/*
 	public Graph(int[,] grid)
