@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class LockedDoorManager : MonoBehaviour 
 {
-	public KeyManager keyCount;
-	public 
+	public ItemManager keyCount;
+	public GameObject textBox;
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		if(other.gameObject.name == "Player" && keyCount.keysInHand > 0)
+		if(other.gameObject.name == "Player")
 		{
-			this.transform.parent.gameObject.SetActive(false);
-			other.gameObject.GetComponent<KeyManager> ().UseKey ();
+			if(keyCount.keysInHand > 0)
+			{
+				this.transform.parent.gameObject.SetActive(false);
+				other.gameObject.GetComponent<ItemManager> ().UseKey ();
+			} else {
+				other.GetComponent<PlayerController> ().canMove = false;
+				Debug.Log("Triggered");
+				textBox.GetComponent<TextBoxManager> ().EnableTextBox ();
+			}
+
 		}
 	}
 }

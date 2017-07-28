@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class KeyPickUp : MonoBehaviour 
 {
+//	public bool isActive;
+//
+//
+//	void Start ()
+//	{
+//		if(!isActive)
+//		{
+//			this.gameObject.SetActive (false);
+//		}
+//	}
+
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		if(other.gameObject.name == "Player")
 		{
-			other.gameObject.GetComponent<KeyManager> ().PickupKey ();
+			other.gameObject.GetComponent<ItemManager> ().PickupKey ();
 			gameObject.SetActive (false);
 		}
 	}

@@ -12,7 +12,7 @@ public class Search {
 	public int iterations;
 	public bool finished;
 
-	/*public Search(Graph graph){
+	public Search(Graph graph){
 		this.graph = graph;
 	}
 
@@ -89,5 +89,5 @@ public class Search {
 	public Node ChooseNode(){
 		return reachable[Random.Range (0, reachable.Count)];
 	}
-		*/
+		
 }

@@ -41,7 +41,7 @@ public class TextBoxManager : MonoBehaviour
 		gameObject.SetActive(false);
 		isActive = false;
 		player.canMove = true;
-		Destroy (gameObject);
+//		Destroy (gameObject);
 	}
 
 }

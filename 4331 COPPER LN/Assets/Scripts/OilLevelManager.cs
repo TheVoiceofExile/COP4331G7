@@ -8,6 +8,7 @@ public class OilLevelManager : MonoBehaviour
 	public int playerMaxOil = 20;
 	public int playerCurrentOil;
 	public LightManager lighting;
+	public ItemManager items;
 
 	// Use this for initialization
 	void Start () 
@@ -58,6 +59,8 @@ public class OilLevelManager : MonoBehaviour
 	public void SetMaxOil ()
 	{
 		playerCurrentOil = playerMaxOil;
+		items.PickupLantern ();
+
 	}
 		
 }
