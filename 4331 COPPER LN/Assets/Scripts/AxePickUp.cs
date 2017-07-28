@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyPickUp : MonoBehaviour 
+public class AxePickUp : MonoBehaviour 
 {
 	public bool isActive;
 
@@ -19,7 +19,7 @@ public class KeyPickUp : MonoBehaviour
 	{
 		if(other.gameObject.name == "Player")
 		{
-			other.gameObject.GetComponent<ItemManager> ().PickupKey ();
+			other.gameObject.GetComponent<ItemManager> ().PickupAxe ();
 			gameObject.SetActive (false);
 		}
 	}

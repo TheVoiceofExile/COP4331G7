@@ -10,7 +10,8 @@ using UnityEngine;
 public class LockedStairManager : MonoBehaviour 
 {
 	public ItemManager axe;
-	public GameObject textBox;
+	public GameObject blockedDialogue;
+	public GameObject removeDialogue;
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
@@ -19,11 +20,12 @@ public class LockedStairManager : MonoBehaviour
 			if(axe.axeInHand == true)
 			{
 				this.transform.parent.gameObject.SetActive(false);
+				removeDialogue.GetComponent<TextBoxManager> ().EnableTextBox ();
 
 			} else {
 				other.GetComponent<PlayerController> ().canMove = false;
 				Debug.Log("Triggered");
-				textBox.GetComponent<TextBoxManager> ().EnableTextBox ();
+				blockedDialogue.GetComponent<TextBoxManager> ().EnableTextBox ();
 			}
 
 		}
