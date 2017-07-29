@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43382353, g: 0.022329148, b: 0.022329148, a: 0.922}
+  m_Color: {r: 0.58823526, g: 0.6055363, b: 0.6055363, a: 0.922}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -167,7 +167,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: It's very dark in here... I should find a source of light.
+  m_Text: There is wood blocking the staircase... maybe I can find something to remove
+    it
 --- !u!222 &222166243815939748
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -192,7 +193,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1495966272941750}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -203,8 +204,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -109.2}
-  m_SizeDelta: {x: -80, y: -234}
+  m_AnchoredPosition: {x: 0, y: -109.20001}
+  m_SizeDelta: {x: 311, y: -7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224313568964489270
 RectTransform:
@@ -221,7 +222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9, y: -2.2}
+  m_AnchoredPosition: {x: -0.9, y: -2.1999998}
   m_SizeDelta: {x: 372.3, y: 64.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224675570694865718

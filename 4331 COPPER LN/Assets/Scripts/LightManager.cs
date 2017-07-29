@@ -11,6 +11,8 @@ public class LightManager : MonoBehaviour
 	public float halfLit = 70;
 	public float threeQtrLit = 90;
 	public float fullLit = 110;
+	public float low = .5f;
+	public float high = 1.5f;
 
 
 	// Use this for initialization
@@ -25,6 +27,7 @@ public class LightManager : MonoBehaviour
 	public void SetToEmpty()
 	{
 		lightSource.spotAngle = unLit;
+		lightSource.intensity = low;
 	}
 
 	public void SetToOneQtr()
@@ -45,6 +48,7 @@ public class LightManager : MonoBehaviour
 	public void SetToFull()
 	{
 		lightSource.spotAngle = fullLit;
+		lightSource.intensity = high;
 	}
 		
 }

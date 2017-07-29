@@ -20,22 +20,22 @@ public class OilLevelManager : MonoBehaviour
 	void Update () 
 	{
 		// Make scene go dark when empty oil
-		if(playerCurrentOil == 20)
+		if(playerCurrentOil > 15)
 		{
 			lighting.SetToFull ();
 		}
 
-		if(playerCurrentOil == 15)
+		if(playerCurrentOil > 10 && playerCurrentOil <= 15)
 		{
 			lighting.SetToThreeQtr ();
 		}
 
-		if(playerCurrentOil == 10)
+		if(playerCurrentOil > 5 && playerCurrentOil <= 10)
 		{
 			lighting.SetToHalf ();
 		}
 
-		if(playerCurrentOil == 5)
+		if(playerCurrentOil > 0 && playerCurrentOil <= 5)
 		{
 			lighting.SetToOneQtr ();
 		}

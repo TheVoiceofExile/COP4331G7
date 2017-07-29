@@ -20,6 +20,7 @@ public class LockedStairManager : MonoBehaviour
 			if(axe.axeInHand == true)
 			{
 				this.transform.parent.gameObject.SetActive(false);
+				other.GetComponent<PlayerController> ().canMove = false;
 				removeDialogue.GetComponent<TextBoxManager> ().EnableTextBox ();
 
 			} else {

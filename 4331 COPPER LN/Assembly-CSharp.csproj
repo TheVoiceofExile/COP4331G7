@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\AxePickUp.cs" />
      <Compile Include="Assets\Scripts\CamTrigger.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\CarLightAnimations.cs" />
      <Compile Include="Assets\Scripts\Chase.cs" />
      <Compile Include="Assets\Scripts\ChestManager.cs" />
      <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
@@ -59,8 +60,10 @@
      <Compile Include="Assets\Scripts\ItemManager.cs" />
      <Compile Include="Assets\Scripts\KeyPickUp.cs" />
      <Compile Include="Assets\Scripts\LightManager.cs" />
+     <Compile Include="Assets\Scripts\LightnightAnimation.cs" />
      <Compile Include="Assets\Scripts\LockedDoorManager.cs" />
      <Compile Include="Assets\Scripts\LockedStairManager.cs" />
+     <Compile Include="Assets\Scripts\MasterKeyPickup.cs" />
      <Compile Include="Assets\Scripts\MurdereManager.cs" />
      <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\OilLevelManager.cs" />
@@ -73,6 +76,7 @@
      <Compile Include="Assets\Scripts\Search.cs" />
      <Compile Include="Assets\Scripts\TextBoxManager.cs" />
      <Compile Include="Assets\Scripts\TextImporter.cs" />
+     <Compile Include="Assets\Scripts\TorchManager.cs" />
      <Compile Include="Assets\Scripts\UIManager.cs" />
      <Compile Include="Assets\Scripts\UItrigger.cs" />
      <Compile Include="Assets\Scripts\Warp.cs" />
