@@ -36,8 +36,8 @@ public class TorchManager : MonoBehaviour
 			oil.UseOil ();
 			oil.UseOil ();
 			oil.UseOil ();
-			oil.UseOil ();
-			oil.UseOil ();
+//			oil.UseOil ();
+//			oil.UseOil ();
 
 			// Dialogue
 			other.GetComponent<PlayerController> ().canMove = false;

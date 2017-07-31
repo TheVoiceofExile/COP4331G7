@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\CarLightAnimations.cs" />
      <Compile Include="Assets\Scripts\Chase.cs" />
      <Compile Include="Assets\Scripts\ChestManager.cs" />
+     <Compile Include="Assets\Scripts\Death.cs" />
      <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
      <Compile Include="Assets\Scripts\EndGame.cs" />
      <Compile Include="Assets\Scripts\FrontDoorManager.cs" />
@@ -69,6 +70,10 @@
      <Compile Include="Assets\Scripts\OilLevelManager.cs" />
      <Compile Include="Assets\Scripts\OilRefill.cs" />
      <Compile Include="Assets\Scripts\OpenDoor.cs" />
+     <Compile Include="Assets\Scripts\PathFinder\AIManager.cs" />
+     <Compile Include="Assets\Scripts\PathFinder\AINode.cs" />
+     <Compile Include="Assets\Scripts\PathFinder\BreadCrumb.cs" />
+     <Compile Include="Assets\Scripts\PathFinder\MinHeap.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\RoomTransition.cs" />
