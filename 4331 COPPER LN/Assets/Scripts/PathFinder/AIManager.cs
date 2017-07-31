@@ -45,15 +45,20 @@ public class AIManager : MonoBehaviour
 				}
 			}
 			if(!chase && Vector2.Distance(transform.position, world[path.x, path.y].transform.position) < 5f)
+			{
 				path = path.next;
+				finish = world[path.x, path. y].GetComponent<AINode>();
+			}
 		}
 	}
 
 	void FixedUpdate()
 	{
-		UpdateNode(transform, ref finish);
 		if(UpdateNode(player, ref start))
+		{
 			path = FindPath();
+		}
+
 	}
 
 	private bool UpdateNode(Transform entity, ref AINode closest)
@@ -86,11 +91,13 @@ public class AIManager : MonoBehaviour
 		Debug.Log("Finding Path");
 		MinHeap<BreadCrumb> heap = new MinHeap<BreadCrumb>(256);
 		BreadCrumb[,] crumbs = new BreadCrumb[11, 6];
+		BreadCrumb goal = new BreadCrumb(finish);
+		BreadCrumb current = new BreadCrumb(start);
 		BreadCrumb node;
 		int cost;
 
-		BreadCrumb goal = new BreadCrumb(finish);
-		BreadCrumb current = new BreadCrumb(start);
+		if(current.Equals(goal))
+			return current;
 		current.cost = 0;
 		crumbs[current.x, current.y] = current;
 		heap.Add(current);
