@@ -61,6 +61,7 @@ public class AIManager : MonoBehaviour
 
 	}
 
+
 	private bool UpdateNode(Transform entity, ref AINode closest)
 	{
 		int low = int.MaxValue;

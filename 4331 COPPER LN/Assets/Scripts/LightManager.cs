@@ -11,7 +11,7 @@ public class LightManager : MonoBehaviour
 	public float halfLit = 70;
 	public float threeQtrLit = 90;
 	public float fullLit = 110;
-	public float low = .5f;
+	public float low = 0.8f;
 	public float high = 1.5f;
 
 
