@@ -10,7 +10,7 @@ public class AIManager : MonoBehaviour
 	private AINode start, finish;
 	private Transform player;
 	private BreadCrumb path;
-	private GameObject[,] world = new GameObject[11, 4];
+	private GameObject[,] world = new GameObject[11, 6];
 
 	// Use this for initialization
 	void Start()
@@ -19,11 +19,11 @@ public class AIManager : MonoBehaviour
 		GameObject[] nodes = GameObject.FindGameObjectsWithTag("Node");
 		foreach(GameObject node in nodes)
 		{
-			AINode point = GetComponent<AINode>();
+			AINode point = node.GetComponent<AINode>();
 			world[point.x, point.y] = node;
 		}
 		start = world[7, 0].GetComponent<AINode>();
-		finish = world[0, 0].GetComponent<AINode>();
+		finish = world[6, 5].GetComponent<AINode>();
 	}
 	
 	// Update is called once per frame
@@ -78,14 +78,14 @@ public class AIManager : MonoBehaviour
 			return true;
 		}
 		return false;
-
 	}
 
 	// Find the shortest path from AINodes start to finish, Dijkstra based
 	private BreadCrumb FindPath()
 	{
+		Debug.Log("Finding Path");
 		MinHeap<BreadCrumb> heap = new MinHeap<BreadCrumb>(256);
-		BreadCrumb[,] crumbs = new BreadCrumb[11, 4];
+		BreadCrumb[,] crumbs = new BreadCrumb[11, 6];
 		BreadCrumb node;
 		int cost;
 
@@ -100,6 +100,7 @@ public class AIManager : MonoBehaviour
 			// Find best item and switch it to the 'closedList'
 			current = heap.GetHead();
 			current.visited = true;
+			Debug.Log(current.x + " " + current.y);
 
 			// Check neighbors
 			foreach(AINode neighbor in current.neighbors)
@@ -134,6 +135,7 @@ public class AIManager : MonoBehaviour
 						// Check to see if we're done
 						if(node.Equals(goal))
 						{
+							Debug.Log("Path Found");
 							node.next = current;
 							return node;
 						}
@@ -144,6 +146,7 @@ public class AIManager : MonoBehaviour
 			}
 		}
 		// No path was found
+		Debug.Log("No Path Found");
 		return null;
 	}
 }
