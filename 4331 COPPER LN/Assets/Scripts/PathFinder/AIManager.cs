@@ -3,10 +3,14 @@
 public class AIManager : MonoBehaviour
 {
 	public float speed = 50f;
-
 	private bool chase = false;
+	private bool playerMoving = false;
 
-	// start is the node that the player is closest to, finish is the ai
+	private Animator anim;
+	private Rigidbody2D myRigidBody;
+	private Vector2 lastMove;
+
+	// start is the node that the player is closest to, finish is the AI
 	private AINode start, finish;
 	private Transform player;
 	private BreadCrumb path;
@@ -15,6 +19,7 @@ public class AIManager : MonoBehaviour
 	// Use this for initialization
 	void Start()
 	{
+		anim = GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		GameObject[] nodes = GameObject.FindGameObjectsWithTag("Node");
 		foreach(GameObject node in nodes)
@@ -29,26 +34,50 @@ public class AIManager : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		playerMoving = false;
+
 		if(path != null)
 		{
-			if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.5f || Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.5f)
+			float horizontalMove = 0;
+			float verticalMove = 0;
+
+			if (Mathf.Abs (Input.GetAxisRaw ("Horizontal")) > 0.5f || Mathf.Abs (Input.GetAxisRaw ("Vertical")) > 0.5f)
 			{
-				if(path.x == start.x && path.y == start.y)
+				playerMoving = true;
+
+				if (path.next == null) 
 				{
-					transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+					transform.position = Vector3.MoveTowards (transform.position, player.position, speed * Time.deltaTime);
+					horizontalMove = world [path.x, path.y].transform.position.x - transform.position.x;
+					verticalMove = world [path.x, path.y].transform.position.y - transform.position.y;
 					chase = true;
 				}
-				else
+				else 
 				{
-					transform.position = Vector3.MoveTowards(transform.position, world[path.x, path.y].transform.position, speed * Time.deltaTime);
+					transform.position = Vector3.MoveTowards (transform.position, world [path.x, path.y].transform.position, speed * Time.deltaTime);
+					horizontalMove = world [path.x, path.y].transform.position.x - transform.position.x;
+					verticalMove = world [path.x, path.y].transform.position.y - transform.position.y;
 					chase = false;
 				}
+
+
+				lastMove.x = horizontalMove;
+				lastMove.y = verticalMove;
 			}
+
 			if(!chase && Vector2.Distance(transform.position, world[path.x, path.y].transform.position) < 5f)
 			{
 				path = path.next;
 				finish = world[path.x, path. y].GetComponent<AINode>();
 			}
+				
+
+			anim.SetBool("PlayerMoving", playerMoving);
+			anim.SetFloat("MurdererMoveX", horizontalMove);
+			anim.SetFloat("MurdererMoveY", verticalMove);
+			anim.SetFloat("LastMurdererMoveX", lastMove.x);
+			anim.SetFloat("LastMurdererMoveY", lastMove.y);
+
 		}
 	}
 
